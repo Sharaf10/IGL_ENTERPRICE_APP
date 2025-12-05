@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:igl_app/app.dart';
-import 'package:globalsfa/view/FragmentTools.dart';
-import 'package:globalsfa/view/Logout.dart';
-import 'package:globalsfa/view/SalesManagement.dart';
+import 'package:igl_app/screens/common/DashboardPage.dart';
+
+import '../advice/cylinder_advice_page.dart';
+// import 'package:globalsfa/view/FragmentTools.dart';
+// import 'package:globalsfa/view/Logout.dart';
+// import 'package:globalsfa/view/SalesManagement.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -39,9 +41,9 @@ class _HomePageState extends State<HomePage> {
         },
         children: const [
           DashboardPage(),
-          SalesManagementPage(),
-          FragmentToolsPage(),
-          LogoutPage()
+          CylinderAdvicePage(),
+          // FragmentToolsPage(),
+          // LogoutPage()
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
@@ -61,7 +63,7 @@ class _HomePageState extends State<HomePage> {
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.point_of_sale_sharp),
-            label: 'Sales Management',
+            label: 'Cylinder Advice',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.settings),
